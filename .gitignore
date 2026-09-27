@@ -1,0 +1,31 @@
+# Secrets
+.env
+
+# Proprietary data: never commit (only data/README.md is tracked)
+data/*
+!data/README.md
+*.xlsx
+*.xls
+*.csv
+
+# Training outputs (checkpoints, predictions with referral text, reports)
+DeepSeek-R1-Distill-Llama-8B/
+llama3_8b_radiology_cls/
+gptsw3_radiology_cls_full/
+salamandra_swe_cls/
+checkpoint-*/
+*.safetensors
+*.bin
+*.pt
+*.zip
+run_report.*
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
